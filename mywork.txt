@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>END SEM PRACTICE</title>
+        <style>
+            .card{
+                top : 50px;
+                left : 40%;
+                position:absolute;
+                background-color:blue;
+            }
+            #output{
+                top : 200px;
+                left : 40%;
+                position:absolute;
+            }
+        </style>
+        <script>
+            function doSomething(){
+                var username = document.getElementById("input1").value;
+                var value = document.getElementById("input2").value;
+
+                value = parseInt(value);
+
+                if (value < 10){
+                    document.getElementById("output").innerHTML = "LOW VALUE BID HIGHERRR";
+                    return;
+                }
+                
+
+                document.getElementById("output").innerHTML = "END OF FUNCTION RETURN man " + username;
+            }
+        </script>
+    </head>
+    <body>
+        <div class = "card">
+            <input type ="text" placeholder = "Username" id = "input1"><br><br>
+            <input type ="text" placeholder = "Valueaaah" id = "input2"><br><br>
+            <input type ="button" value = "Calculate" id = "butty" onclick = "doSomething()"><br><br>
+        </div>
+        <div id = "output">
+            OUTPUT WILL BE HERE
+        </div>
+    </body>
+</html>
